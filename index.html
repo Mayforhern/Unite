@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unite</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="OIG3.png" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Unite</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div id="profileSection" class="profile-section">
+            <!-- Content of the profile section goes here -->
+            <p>User: Harsh Gupta</p>
+            <p>Email: harshgupta@gmail.com</p>
+            <!-- Add more profile information as needed -->
+        </div>
+        <div class="services-list">
+            <div class="search-bar">
+                <input type="text" id="chatSearch" placeholder="Search Chats...">
+            </div>
+            <div class="connected-services">
+                <button onclick="displayConversation('WhatsApp')">
+                    <img src="whatsapp_logo.png" alt="WhatsApp Logo">
+                    WhatsApp
+                </button>
+                <button onclick="displayConversation('iMessage')">
+                    <img src="imessage_logo.png" alt="iMessage Logo">
+                    iMessage
+                </button>
+                <button onclick="displayConversation('Telegram')">
+                    <img src="telegram_logo.png" alt="Telegram Logo">
+                    Telegram
+                </button>
+                <button onclick="displayConversation('Twitter')">
+                    <img src="twitter_logo.png" alt="Twitter Logo">
+                    Twitter
+                </button>
+                <button onclick="displayConversation('Snapchat')">
+                    <img src="snapchat_logo.png" alt="Snapchat Logo">
+                    Snapchat
+                </button>
+                <button onclick="displayConversation('LinkedIn')">
+                    <img src="linkedin_logo.png" alt="LinkedIn Logo">
+                    LinkedIn
+                </button>
+                <button onclick="displayConversation('Messenger')">
+                    <img src="messenger_logo.png" alt="Messenger Logo">
+                    Messenger
+                </button>
+            </div>
+        </div>
+        <div class="conversation">
+            <h2>Conversation</h2>
+            <div id="conversationHistory">
+                <!-- Conversation history for the selected service will be dynamically added here -->
+            </div>
+            <div class="compose">
+                <textarea id="messageInput" placeholder="Type your message..."></textarea>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
